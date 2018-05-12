@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lpi.bikerscompanion.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchAlarmeVitesse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleY="1.1"
+                android:text="Alarme vitesse"/>
+
+            <LinearLayout
+                android:id="@+id/idLayoutVitesse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Détermine la vitesse à partir de laquelle vous recevez une alerte"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Vitesse max:"/>
+
+                    <EditText
+                        android:id="@+id/editTextVitesseMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:windowSoftInputMode="stateHidden"/>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="km/h"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchAutonomie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_categorie_spinner"
+                android:layout_weight="1"
+                android:background="@color/colorAlternativeBackground"
+                android:scaleY="1.1"
+                android:text="Alarme autonomie"/>
+
+            <LinearLayout
+                android:id="@+id/idLayoutAutonomie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAlternativeBackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Autonomie max:"/>
+
+                    <EditText
+                        android:id="@+id/editTextAutonomie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:windowSoftInputMode="stateHidden"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="km"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Switch
+                        android:id="@+id/switchDemiReservoir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:foregroundGravity="left"
+                        android:gravity="right"
+                        android:text="1/2 réservoir"/>
+
+                    <Switch
+                        android:id="@+id/switchQuartReservoir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="end"
+                        android:text="1/4 réservoir"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conseiller une pause:"
+                android:textAppearance="@android:style/TextAppearance.Material"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroupPauses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPauseJamais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jamais"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonPauseDeuxHeures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toutes les deux heures"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonPauseHeures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toutes les heures"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAlternativeBackground"
+                android:text="Annoncer l'heure:"
+                android:textAppearance="@android:style/TextAppearance.Material"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroupHeures"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAlternativeBackground">
+
+                <RadioButton
+                    android:id="@+id/radioButtonHeureJamais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jamais"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonHeureHeure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toutes les heures"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonHeureDemi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toutes les demi heures"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonHeureQuart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tous les quart d'heures"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radiogroupeSMS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lire les SMS entrants:"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonSMSJamais"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jamais"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonSMSContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Uniquement ceux des contacts"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonSMSToujours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Toujours"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAlternativeBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sortie audio:"/>
+
+                <RadioGroup
+                    android:id="@+id/radiogroupSortieAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonAudioDefaut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Défaut du système"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonAudioHautParleur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sortie sur haut parleur du téléphone"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonAudioBluetooth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Forcer sortie vers Bluetooth"/>
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/buttonTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/fond_bouton"
+                    android:drawableStart="@drawable/volumehigh"
+                    android:onClick="onClickTestAudio"
+                    android:text="Test"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

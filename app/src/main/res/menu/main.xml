@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_theme"
+        android:orderInCategory="110"
+        android:title="@string/action_theme"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_audio"
+        android:orderInCategory="200"
+        android:title="@string/action_audio"
+        />
+
+    <item
+        android:id="@+id/action_speech"
+        android:orderInCategory="300"
+        android:title="@string/action_speech"
+        />
+    <item
+        android:id="@+id/action_gps"
+        android:orderInCategory="301"
+        android:title="GPS"/>
+</menu>

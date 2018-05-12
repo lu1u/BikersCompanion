@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:padding="4dp">
+
+    <LinearLayout
+        android:id="@+id/idLayoutBack"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorAlternativeBackground"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/imageViewPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hauteur_couleur_liste_theme"
+            android:layout_weight="1"
+            android:tint="@color/accent3"
+            app:srcCompat="@drawable/forme_liste_themes"/>
+
+        <ImageView
+            android:id="@+id/imageViewPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hauteur_couleur_liste_theme"
+            android:layout_weight="1"
+            android:tint="@color/accent3"
+            app:srcCompat="@drawable/forme_liste_themes"/>
+
+        <ImageView
+            android:id="@+id/imageViewAccent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hauteur_couleur_liste_theme"
+            android:layout_weight="1"
+            android:tint="@color/accent3"
+            app:srcCompat="@drawable/forme_liste_themes"/>
+
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hauteur_couleur_liste_theme"
+            android:layout_weight="1"
+            android:tint="@color/accent3"
+            app:srcCompat="@drawable/forme_liste_themes"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewThemeName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42a5f5</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorAccent">#ef5350</color>
+    <color name="colorPrimaryLight">#90caf9</color>
+    <color name="couleurBack">#fff</color>
+
+    <color name="colorAlternativeBackground">#66AAAAAA</color>
+
+    <color name="colorTexteBoutons">#fff</color>
+    <color name="couleurHint">#FF8866</color>
+
+
+    <color name="primary">#42a5f5</color>
+    <color name="primaryText">@android:color/primary_text_light</color>
+
+    <!-- Ducati -->
+    <color name="primary2">#f44336</color>
+    <color name="primary_dark2">#b71c1c</color>
+    <color name="primary_light2">#ef9a9a</color>
+    <color name="accent2">#00C853</color>
+    <color name="primary_text2">#212121</color>
+    <color name="secondary_text2">#727272</color>
+    <color name="couleurBack2">#ffff</color>
+    <color name="primaryText2">@android:color/primary_text_light</color>
+
+
+    <!-- KTM -->
+    <color name="primary3">#FF9800</color>
+    <color name="primary_dark3">#000</color>
+    <color name="primary_light3">#FFCC80</color>
+    <color name="accent3">#ffffff</color>
+    <color name="primary_text3">#212121</color>
+    <color name="secondary_text3">#727272</color>
+    <color name="couleurBack3">#fff</color>
+    <color name="primaryText3">@android:color/primary_text_dark</color>
+
+    <!-- Harley -->
+    <color name="primary4">#455A64</color>
+    <color name="primary_dark4">#000</color>
+    <color name="primary_light4">#90A4AE</color>
+    <color name="accent4">#FB8C00</color>
+    <color name="secondary_text4">#727272</color>
+    <color name="couleurBack4">#FF9800</color>
+    <color name="primaryText4">@android:color/primary_text_dark</color>
+
+
+    <!-- Yamaha -->
+    <color name="primary5">#1976D2</color>
+    <color name="primary_dark5">#0D47A1</color>
+    <color name="primary_light5">#BBDEFB</color>
+    <color name="accent5">#c62828</color>
+    <color name="primary_text5">#212121</color>
+    <color name="secondary_text5">#727272</color>
+    <color name="couleurBack5">#fff</color>
+    <color name="primaryText5">@android:color/primary_text_light</color>
+
+
+    <color name="primary6">#FFC107</color>
+    <color name="primary_dark6">#FFA000</color>
+    <color name="primary_light6">#FFECB3</color>
+    <color name="accent6">#FF9800</color>
+    <color name="primary_tex6t">#212121</color>
+    <color name="secondary_text6">#727272</color>
+    <color name="couleurBack6">#fff</color>
+    <color name="primaryText6">@android:color/primary_text_light</color>
+
+</resources>
